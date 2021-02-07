@@ -1116,15 +1116,15 @@
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR -1
-#define Y_HOME_DIR -1
+#define X_HOME_DIR 1
+#define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 200
-#define Y_BED_SIZE 200
+#define X_BED_SIZE 310
+#define Y_BED_SIZE 310
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1386,7 +1386,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
